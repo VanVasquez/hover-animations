@@ -58,10 +58,12 @@ button {
   z-index: -1;
   transition: scale 500ms ease-in-out;
 }
-.btn.btn-slide:hover::before {
+.btn.btn-slide:hover::before,
+.btn.btn-slide:focus::before {
   scale: 1;
 }
-.btn.btn-slide:hover {
+.btn.btn-slide:hover,
+.btn.btn-slide:focus {
   color: white;
 }
 .btn.btn-slide {
@@ -82,10 +84,12 @@ button {
   scale: 1.5;
   transition: scale 500ms ease-in-out;
 }
-.btn.btn-circle:hover::before {
+.btn.btn-circle:hover::before,
+.btn.btn-circle:focus::before {
   scale: 0;
 }
-.btn.btn-circle:hover {
+.btn.btn-circle:hover,
+.btn.btn-circle:focus {
   color: white;
   transition: color 500ms ease-in;
 }
@@ -106,7 +110,8 @@ button {
   scale: 0 1;
   transition: scale 200ms ease-in-out;
 }
-.btn.btn-underline:hover::before {
+.btn.btn-underline:hover::before,
+.btn.btn-underline:focus::before {
   scale: 1;
 }
 :root {
